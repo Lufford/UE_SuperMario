@@ -75,7 +75,7 @@ void APowerUpActor::OnSphereOverlap(
     if (OtherActor->ActorHasTag("Player"))
     {
         // Player picked up the power-up
-		Destroy();
+	    Destroy();
         UE_LOG(LogTemp, Warning, TEXT("Grabbed."));
     }
 }
